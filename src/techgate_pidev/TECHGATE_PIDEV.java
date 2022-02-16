@@ -5,6 +5,10 @@
  */
 package techgate_pidev;
 
+import services.ServicePanier;
+import services.serviceProduit;
+import model.Panier;
+import model.Produit;
 import model.commentaire;
 import model.post;
 import services.ServicePost;
@@ -89,11 +93,11 @@ public class TECHGATE_PIDEV {
    
    //wejdene
      //Commande
-        Commande c1 = new Commande(21456789,215,"22 rue el ghazela tunis","2022-02-16","en ligne","2022-02-22",12,12);
-        Commande c2 = new Commande(1,58137341,"sousse rue safsaf","a la livraison");
+       // Commande c1 = new Commande(21456789,215,"22 rue el ghazela tunis","2022-02-16","en ligne","2022-02-22",12,12);
+        //Commande c2 = new Commande(1,58137341,"sousse rue safsaf","a la livraison");
         //Service
         //Service
-        ServiceCommande sc = new ServiceCommande();
+        //ServiceCommande sc = new ServiceCommande();
         
         //Ajouter
        // sc.ajouterCommande2(c1);
@@ -106,6 +110,52 @@ public class TECHGATE_PIDEV {
        //Edit
        //sc.modifierCommande(c2);
        
+       
+       
+       //Rania
+           serviceProduit sp = new serviceProduit();
+        
+        ServicePanier s= new ServicePanier();
+        
+          Panier s1 = new Panier(15,12,9999);
+          Panier s3 = new Panier(15,12,299);
+     
+         //s.ajouterpanier(s1);
+         //s.ajouterpanier(s3);
+        
+         //s.modifierpanier(s3);
+        
+      //s.supppanier(s1);
+        
+    
+        
+        //Afficher
+        System.out.println( s. afficherpanier());
+     
+         
+
+// TODO code application logic here
+ //Produit
+        Produit p12 = new Produit("produit1",30, 30f,"ranou" );
+          Produit p2_m = new Produit(12,"TELE",111, 55,"ouni" );
+        //Service
+        
+        //Ajouter
+     
+          //sp.ajouterProduit(p12);
+        //sp.ajouterProduit(p2);
+        
+      
+        
+        //Afficher
+       //System.out.println(sp.afficherProduit());
+      
+       //supprimer
+     // sp.suppProduit(p2_m);
+      
+      //EDit
+     // sp.Modifierproduit(p2_m);
+
        
        
 
