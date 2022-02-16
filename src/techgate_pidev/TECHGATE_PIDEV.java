@@ -19,6 +19,8 @@ import Services.Service_Reclamation;
 import Services.Service_offre;
 import model.Commande;
 import services.ServiceCommande;
+import model.user;
+import services.serviceUser;
 
 
 /**
@@ -113,12 +115,12 @@ public class TECHGATE_PIDEV {
        
        
        //Rania
-           serviceProduit sp = new serviceProduit();
+          // serviceProduit sp = new serviceProduit();
         
-        ServicePanier s= new ServicePanier();
+        //ServicePanier s= new ServicePanier();
         
-          Panier s1 = new Panier(15,12,9999);
-          Panier s3 = new Panier(15,12,299);
+         // Panier s1 = new Panier(15,12,9999);
+        //  Panier s3 = new Panier(15,12,299);
      
          //s.ajouterpanier(s1);
          //s.ajouterpanier(s3);
@@ -130,14 +132,14 @@ public class TECHGATE_PIDEV {
     
         
         //Afficher
-        System.out.println( s. afficherpanier());
+       // System.out.println( s. afficherpanier());
      
          
 
 // TODO code application logic here
  //Produit
-        Produit p12 = new Produit("produit1",30, 30f,"ranou" );
-          Produit p2_m = new Produit(12,"TELE",111, 55,"ouni" );
+       // Produit p12 = new Produit("produit1",30, 30f,"ranou" );
+        //  Produit p2_m = new Produit(12,"TELE",111, 55,"ouni" );
         //Service
         
         //Ajouter
@@ -157,10 +159,27 @@ public class TECHGATE_PIDEV {
      // sp.Modifierproduit(p2_m);
 
        
-       
+       //khouloud
 
         
+         serviceUser st = new serviceUser();
+      
+       
+        user u1 = new user ("rania", "el horr","52","656","houloud");
+        user u2 = new user (14,"dandani", "iucwbei","52","656","houloud");
         
+         
+        //ajouter first_methode
+          //  st.ajouterUser( u1);
+      
+        //Afficher
+            //System.out.println(st.afficherUser());
+        
+        //Delete
+          // st.supprimerUser(17);
+        //Edit
+       //  st.modifierUser(u2);
+       // System.out.println(st.afficherUser());
         
         
     }
