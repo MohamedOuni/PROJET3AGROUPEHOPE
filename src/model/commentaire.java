@@ -29,10 +29,10 @@ public class commentaire {
         this.id_post = id_post;
     }
 
-    public commentaire(int id_com, String comment, String date_comment, int id_user , int id_post) {
+    public commentaire(int id_com, String comment, int id_user , int id_post) {
         this.id_com = id_com;
         this.comment = comment;
-        this.date_comment = date_comment;
+      
         this.id_user = id_user;
         this.id_post = id_post;
     }

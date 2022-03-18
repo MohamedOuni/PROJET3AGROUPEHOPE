@@ -53,7 +53,7 @@ public class serviceProduit {
             }
             
         } catch (SQLException ex) {
-            ex.printStackTrace();
+            System.out.println(ex.getMessage());
         }
         
         

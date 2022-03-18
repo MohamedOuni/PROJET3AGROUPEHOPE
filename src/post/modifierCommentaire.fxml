@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="post.ModifierCommentaireController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="2.0" layoutY="11.0" prefHeight="620.0" prefWidth="735.0" stylesheets="@../util/style.css">
+         <styleClass>
+            <String fx:value="chosen-fruit-card" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <children>
+            <Label fx:id="labelAlert" layoutX="107.0" layoutY="348.0" prefHeight="31.0" prefWidth="442.0" text="Label" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="conCreateForm" layoutX="107.0" layoutY="390.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="442.0" text="modifier" />
+            <TextArea fx:id="textPost" layoutX="107.0" layoutY="133.0" prefHeight="200.0" prefWidth="442.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

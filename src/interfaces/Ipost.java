@@ -23,6 +23,7 @@ public interface Ipost {
     public void SupprimerParID(int id_post);
     // Edit 
 
+
     /**
      *
      * @param p

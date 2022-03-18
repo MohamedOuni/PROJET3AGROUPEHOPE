@@ -5,6 +5,7 @@
  */
 package model;
 
+
 /**
  *
  * @author ouni
@@ -19,23 +20,60 @@ public class post {
     private String date_post;
     private int id_user;
     private int like_nbr;
-
+    private user user ;
+    private String image;
     public post() {
     }
-
-    public post(String post, String date_post,int like_nbr, int id_user ) {
+    
+    public post(int id_post,String post, String date_post, int id_user,String image ) {
+       this.id_post = id_post;
         this.post = post;
         this.date_post = date_post;
         this.id_user = id_user;
-        this.like_nbr = like_nbr;
+        this.image = image;
     }
 
-    public post(int id_post, String post, String date_post, int like_nbr,int id_user) {
-        this.id_post = id_post;
-        this.post = post;
-        this.date_post = date_post;
-        this.id_user = id_user;
-        this.like_nbr = like_nbr;
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 11 * hash + this.id_post;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final post other = (post) obj;
+        if (this.id_post != other.id_post) {
+            return false;
+        }
+        return true;
+    }
+    
+  
+
+    public user getUser() {
+        
+        return user;
+    }
+     public void setUser( user user) {
+        this.user = user;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+     
+    public String getImage() {
+        return image;
     }
 
     public int getId_post() {
@@ -63,7 +101,7 @@ public class post {
     }
 
     public void setPost(String Post) {
-        this.post = post;
+        this.post = Post;
     }
 
     public void setDate_post(String date_post) {

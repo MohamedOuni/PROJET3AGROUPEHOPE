@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="73.0" prefWidth="1021.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cart.ItemCartController">
+   <children>
+      <HBox prefHeight="64.0" prefWidth="1021.0">
+         <children>
+            <Label fx:id="labelName" prefHeight="88.0" prefWidth="331.0" text="Label" textFill="#878787">
+               <font>
+                  <Font name="Cambria Bold" size="22.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="80.0" prefWidth="322.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="139.0" style="-fx-background-color: 878787;" textFill="#878787">
+                     <font>
+                        <Font name="Cambria Bold" size="22.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="minus" fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/minus-solid.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label fx:id="quatity" prefHeight="80.0" prefWidth="60.0" text="Label" textFill="#878787">
+                     <font>
+                        <Font name="Cambria Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="143.0" style="-fx-background-color: 878787;" textFill="#878787">
+                     <font>
+                        <Font name="Cambria Bold" size="22.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="plus" fitHeight="26.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/plus-solid.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="80.0" prefWidth="360.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="88.0" prefWidth="65.0" style="-fx-background-color: #ebebf9;" textFill="#ebebf9">
+                     <HBox.margin>
+                        <Insets left="120.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/backward-solid.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="82.0" prefWidth="65.0" style="-fx-background-color: #ebebf9;" textFill="#ebebf9">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/trash-solid%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

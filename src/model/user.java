@@ -26,6 +26,32 @@ public class user {
         this.role = role;
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 59 * hash + this.id_user;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final user other = (user) obj;
+        if (this.id_user != other.id_user) {
+            return false;
+        }
+        return true;
+    }
+    
+
     public user(String nom, String prenom, String email, String password, String role) {
         this.nom = nom;
         this.prenom = prenom;

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="post.ForumsController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="900.0" prefWidth="1137.0">
+         <children>
+            <ScrollPane>
+               <content>
+                  <VBox prefHeight="893.0" prefWidth="1137.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="85.0" prefWidth="1137.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="92.0" prefWidth="1137.0" text="Forums" textFill="#878787">
+                                 <font>
+                                    <Font name="Cambria Bold Italic" size="64.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="60.0" prefWidth="1137.0">
+                           <children>
+                              <TextField prefHeight="54.0" prefWidth="734.0" promptText="chercher un forum ..." styleClass="transparent" stylesheets="@../util/style.css">
+                                 <font>
+                                    <Font name="Cambria Bold" size="24.0" />
+                                 </font>
+                              </TextField>
+                              <Button mnemonicParsing="false" onAction="#ajouterForum" prefHeight="62.0" prefWidth="276.0" styleClass="search-button" stylesheets="@../util/style.css" text="Ajouter un forum" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria Bold" size="27.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <ScrollPane prefHeight="746.0" prefWidth="1137.0">
+                           <content>
+                              <VBox fx:id="forms" prefHeight="725.0" prefWidth="1125.0" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

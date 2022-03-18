@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" fx:id="node" prefHeight="777.0" prefWidth="924.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.TestController">
+   <children>
+      <Button fx:id="choosefile" mnemonicParsing="false" prefHeight="85.0" prefWidth="445.0" text="Button" />
+      <TextArea fx:id="field" layoutX="5.0" layoutY="123.0" prefHeight="200.0" prefWidth="270.0" />
+      <Rating fx:id="rate" layoutX="482.0" layoutY="174.0" prefHeight="32.0" prefWidth="349.0" />
+      <AnchorPane fx:id="chartsPlace" layoutX="5.0" layoutY="334.0" prefHeight="440.0" prefWidth="917.0" />
+   </children>
+</AnchorPane>
